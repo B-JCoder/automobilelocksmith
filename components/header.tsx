@@ -17,7 +17,7 @@ export function Header() {
               <Car className="h-8 w-8 text-[#002B5B]" />
               <Lock className="h-4 w-4 text-[#12B0FC] absolute -bottom-1 -right-1" />
             </div>
-            <span className="text-xl font-bold text-[#002B5B] font-heading">Automotive Locksmith</span>
+            <span className="text-xl font-bold text-[#002B5B] font-heading">Automotive Locksmith Bobie Kankam </span>
           </div>
 
           {/* Desktop Navigation */}
