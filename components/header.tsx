@@ -34,8 +34,12 @@ export function Header() {
             <a href="#contact" className="text-gray-700 hover:text-[#002B5B] transition-colors">
               Contact
             </a>
-            <Button className="bg-[#002B5B] hover:bg-[#12B0FC] text-white px-6 py-2 transition-colors" size="lg">
-              Call (770) 795-5500
+            <Button
+              className="bg-[#002B5B] hover:bg-[#12B0FC] text-white px-6 py-2 transition-colors"
+              size="lg"
+              asChild
+            >
+              <a href="tel:+17707955500">Call (770) 795-5500</a>
             </Button>
           </nav>
 
@@ -61,8 +65,8 @@ export function Header() {
               <a href="#contact" className="text-gray-700 hover:text-[#002B5B] transition-colors">
                 Contact
               </a>
-              <Button className="bg-[#002B5B] hover:bg-[#12B0FC] text-white transition-colors w-full" size="lg">
-                Call (770) 795-5500
+              <Button className="bg-[#002B5B] hover:bg-[#12B0FC] text-white transition-colors w-full" size="lg" asChild>
+                <a href="tel:+17707955500">Call (770) 795-5500</a>
               </Button>
             </div>
           </nav>

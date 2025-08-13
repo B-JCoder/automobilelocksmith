@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Phone, MessageSquare } from "lucide-react"
 
@@ -29,14 +31,18 @@ export function HeroSection() {
           <Button
             size="lg"
             className="bg-[#12B0FC] hover:bg-[#0EA5E9] text-white px-8 py-4 text-lg font-semibold transition-colors"
+            asChild
           >
-            <Phone className="mr-2 h-5 w-5" />
-            Call Now
+            <a href="tel:+17707955500">
+              <Phone className="mr-2 h-5 w-5" />
+              Call Now
+            </a>
           </Button>
           <Button
             size="lg"
             variant="outline"
             className="border-white text-white hover:bg-white hover:text-[#002B5B] px-8 py-4 text-lg font-semibold transition-colors bg-transparent"
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
             <MessageSquare className="mr-2 h-5 w-5" />
             Request Service
